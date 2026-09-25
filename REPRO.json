@@ -1,0 +1,68 @@
+{
+  "model_id": "HuggingFaceTB/SmolLM-360M",
+  "revision": "59f7ef243ee09a72cbc14cb054393a3e3b771d41",
+  "license": "apache-2.0",
+  "llama_cpp_commit": "6b790a9c291b5d7af3312bbf9f0c558aa023b13e",
+  "artifacts": [
+    {
+      "name": "smollm-360m-F16.gguf",
+      "bytes": 725553184,
+      "sha256": "ca6bb6e5f89a5483bbcb86e49480431d7cae57bf0a452d344db54a2141459414"
+    },
+    {
+      "name": "smollm-360m-Q4_K_M.gguf",
+      "bytes": 270590368,
+      "sha256": "bbadb42934747b68c22fa2f6c1802136061c43309627186827efdfb149f88d3a"
+    },
+    {
+      "name": "smollm-360m-Q8_0.gguf",
+      "bytes": 386404384,
+      "sha256": "8e9c2a356c0282c801fe37ef1840731a01e6a74acf7ccd51a036978eb9c0e140"
+    }
+  ],
+  "created_utc": "2026-09-25T16:35:44.970841+00:00",
+  "ppl-results.json": {
+    "model": "smollm-360m",
+    "eval_file": "ppl-en.txt",
+    "measurements": {
+      "F16": {
+        "ppl": 14.5685,
+        "error": 0.91107
+      },
+      "Q8_0": {
+        "ppl": 14.6009,
+        "error": 0.9153,
+        "ratio_to_f16": 1.0022239763874112
+      },
+      "Q4_K_M": {
+        "ppl": 14.8333,
+        "error": 0.92991,
+        "ratio_to_f16": 1.0181762020798297
+      }
+    }
+  },
+  "result.json": {
+    "model": "smollm-360m",
+    "architecture": "LlamaForCausalLM",
+    "kind": "causal",
+    "smoke": "generation",
+    "generation": "warning: no usable GPU found, --gpu-layers option will be ignored\nwarning: one possible reason is that llama.cpp was compiled without GPU support\nwarning: consult docs/build.md for compilation instructions\n0.00.011.524 I llama_completion: llama backend init\n0.00.011.544 I llama_completion: load the model and apply lora adapter, if any\n0.00.874.950 I cmn          init: llama threadpool init, n_threads = 4\n0.01.043.025 I \n0.01.043.108 I system_info: n_threads = 4 (n_threads_batch = 4) / 12 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | \n0.01.043.110 I \n0.01.043.248 I sampler seed: 3898891674\n0.01.043.282 I sampler params: \n\trepeat_last_n = 64, repeat_penalty = 1.000, frequency_penalty = 0.000, presence_penalty = 0.000\n\tdry_multiplier = 0.000, dry_base = 1.750, dry_allowed_length = 2, dry_penalty_last_n = 64\n\ttop_k = 40, top_p = 0.950, min_p = 0.050, xtc_probability = 0.000, xtc_threshold = 0.100, typical_p = 1.000, top_n_sigma = -1.000, temp = 0.000\n\tmirostat = 0, mirostat_lr = 0.100, mirostat_ent = 5.000, adaptive_target = -1.000, adaptive_decay = 0.900\n0.01.043.301 I sampler chain: logits -> ?penalties -> ?dry -> ?top-n-sigma -> top-k -> ?typical -> top-p -> min-p -> ?xtc -> temp-ext -> dist \n0.01.043.304 I generate: n_ctx = 256, n_batch = 2048, n_predict = 16, n_keep = 0\n0.01.043.305 I \n Paris.\nThe capital of France is Paris.\nThe capital of France is\n\n0.02.745.658 I common_perf_print:    sampling time =       6.32 ms\n0.02.745.661 I common_perf_print:    samplers time =       1.31 ms /    21 tokens\n0.02.745.663 I common_perf_print:        load time =     518.68 ms\n0.02.745.667 I common_perf_print: prompt eval time =      90.79 ms /     5 tokens (   18.16 ms per token,    55.07 tokens per second)\n0.02.745.670 I common_perf_print:        eval time =    1603.36 ms /    15 runs   (  106.89 ms per token,     9.36 tokens per second)\n0.02.745.672 I common_perf_print:       total time =    1702.66 ms /    20 tokens\n0.02.745.674 I common_perf_print: unaccounted time =       2.19 ms /   0.1 %      (total - sampling - prompt eval - eval) / (total)\n0.02.745.675 I common_perf_print:    graphs reused =         14\n",
+    "artifacts": [
+      {
+        "path": "smollm-360m-F16.gguf",
+        "bytes": 725553184,
+        "sha256": "ca6bb6e5f89a5483bbcb86e49480431d7cae57bf0a452d344db54a2141459414"
+      },
+      {
+        "path": "smollm-360m-Q8_0.gguf",
+        "bytes": 386404384,
+        "sha256": "8e9c2a356c0282c801fe37ef1840731a01e6a74acf7ccd51a036978eb9c0e140"
+      },
+      {
+        "path": "smollm-360m-Q4_K_M.gguf",
+        "bytes": 270590368,
+        "sha256": "bbadb42934747b68c22fa2f6c1802136061c43309627186827efdfb149f88d3a"
+      }
+    ]
+  }
+}
