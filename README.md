@@ -20,9 +20,9 @@ Pinned, reproducible llama.cpp GGUF conversion of the 362M-parameter SmolLM base
 
 | File | Purpose |
 |---|---|
-| `SmolLM-360M-F16.gguf` | Reference quality |
-| `SmolLM-360M-Q8_0.gguf` | Higher-quality compact format |
-| `SmolLM-360M-Q4_K_M.gguf` | Smallest release format |
+| `smollm-360m-F16.gguf` | Reference quality |
+| `smollm-360m-Q8_0.gguf` | Higher-quality compact format |
+| `smollm-360m-Q4_K_M.gguf` | Smallest release format |
 
 ## Validation
 
