@@ -12,7 +12,7 @@ tags:
 
 # SmolLM-360M GGUF
 
-[Source model](https://huggingface.co/HuggingFaceTB/SmolLM-360M) · [Build hub](https://github.com/Dadhichi-Sarker-Shayon/SmolLM-360M-GGUF)
+[Source model](https://huggingface.co/HuggingFaceTB/SmolLM-360M) · [HF release](https://huggingface.co/ShayonSarker/SmolLM-360M-GGUF) · [Build hub](https://github.com/Dadhichi-Sarker-Shayon/SmolLM-360M-GGUF)
 
 Pinned, reproducible llama.cpp GGUF conversion of the 362M-parameter SmolLM base model. The source is Apache-2.0 licensed and uses a 2,048-token context window.
 
