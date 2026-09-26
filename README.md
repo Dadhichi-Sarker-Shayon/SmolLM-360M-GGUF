@@ -21,6 +21,9 @@ tags:
 
 <div align="center">
 
+<a href="https://huggingface.co/ShayonSarker/SmolLM-360M-GGUF"><img alt="Hugging Face" src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge"></a>
+<a href="https://github.com/Dadhichi-Sarker-Shayon/SmolLM-360M-GGUF"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge"></a>
+
 <img alt="SmolLM" src="https://img.shields.io/badge/model-SmolLM--360M-8A2BE2?style=for-the-badge">
 <img alt="GGUF formats" src="https://img.shields.io/badge/GGUF-F16%20%7C%20Q8_0%20%7C%20Q4_K_M-FFD21E?style=for-the-badge">
 <img alt="Parameters" src="https://img.shields.io/badge/params-362M-00A6A6?style=for-the-badge">
